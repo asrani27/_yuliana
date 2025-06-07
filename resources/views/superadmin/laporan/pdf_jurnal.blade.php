@@ -13,8 +13,9 @@
     <table width="100%">
         <tr>
             <td width="15%">
-                <img src="data:image/jpeg;base64,{{ base64_encode(file_get_contents(public_path('logo/logo.jpg'))) }}"
-                    width="100px">
+                {{-- <img
+                    src="data:image/jpeg;base64,{{ base64_encode(file_get_contents(public_path('logo/logo.jpg'))) }}"
+                    width="100px"> --}}
             </td>
             <td style="text-align: center;" width="60%">
 
