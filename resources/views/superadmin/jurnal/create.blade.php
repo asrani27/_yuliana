@@ -19,7 +19,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Kode Jurnal</label>
-                        <input type="text" name="kode" value={{kodeJurnal()}} class="form-control" readonly>
+                        <input type="text" name="kode" value={{kodeJurnal()}} class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nama jurnal</label>
