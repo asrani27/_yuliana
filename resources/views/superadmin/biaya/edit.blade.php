@@ -14,7 +14,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Kode Produksi</label>
-                        <input type="text" name="kode" value={{kodeBiaya()}} class="form-control" readonly>
+                        <input type="text" name="kode" value={{kodeBiaya()}} class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nama Produksi</label>

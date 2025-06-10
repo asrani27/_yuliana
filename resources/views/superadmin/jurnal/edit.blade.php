@@ -18,7 +18,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Kode Jurnal</label>
-                        <input type="text" name="kode" value={{$data->kode}} class="form-control" readonly>
+                        <input type="text" name="kode" value={{$data->kode}} class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nama jurnal</label>
