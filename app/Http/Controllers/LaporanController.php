@@ -52,8 +52,9 @@ class LaporanController extends Controller
         $jenis = request()->get('jenis');
         if ($jenis == '1') {
             $data = Bahan::get();
-            $pdf = Pdf::loadView('superadmin.laporan.pdf_bahan', compact('data'))->setPaper('a4', 'landscape');;
-            return $pdf->stream();
+            return view('superadmin.laporan.pdf_bahan', compact('data'));
+            // $pdf = Pdf::loadView('superadmin.laporan.pdf_bahan', compact('data'))->setPaper('a4', 'landscape');;
+            // return $pdf->stream();
         }
 
         if ($jenis == '2') {
