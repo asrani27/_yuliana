@@ -21,11 +21,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">bahan</label>
+                        <label for="exampleInputEmail1">Biaya Bahan Baku</label>
                         <select class="form-control" name="bahan_id">
                             <option value="">-</option>
                             @foreach (bahan() as $item)
-                            <option value="{{$item->id}}">{{$item->nama}}</option>
+                            <option value="{{$item->id}}">Kode {{$item->kode}}, Rp. {{number_format($item->harga)}}
+                            </option>
                             @endforeach
                         </select>
                     </div>
@@ -39,27 +40,39 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">tenagakerja</label>
+                        <label for="exampleInputEmail1">Biaya Tenaga Kerja</label>
                         <select class="form-control" name="tenaga_kerja_id">
                             <option value="">-</option>
                             @foreach (tenagakerja() as $item)
-                            <option value="{{$item->id}}">{{$item->nama}}</option>
+                            <option value="{{$item->id}}">{{$item->nama}} - Rp. {{number_format($item->upah->jumlah)}}
+                            </option>
                             @endforeach
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Biaya</label>
-                        <input type="text" name="biaya" class="form-control" onkeypress="return hanyaAngka(event)"
+                        <label for="exampleInputEmail1">Biaya Overhead Pabrik</label>
+                        <select class="form-control" name="overhead_id">
+                            <option value="">-</option>
+                            @foreach (overhead() as $item)
+                            <option value="{{$item->id}}">Variabel : Rp.{{number_format($item->overhead_variabel)}} -
+                                Tetap : Rp. {{number_format($item->overhead_tetap)}}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Persedian barang awal jadi</label>
+                        <input type="text" name="barang_awal" class="form-control" onkeypress="return hanyaAngka(event)"
                             required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">harga produksi</label>
-                        <input type="text" name="harga_produksi" class="form-control"
+                        <label for="exampleInputEmail1">Persedian barang akhir jadi</label>
+                        <input type="text" name="barang_akhir" class="form-control"
                             onkeypress="return hanyaAngka(event)" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">harga jual</label>
-                        <input type="text" name="harga_jual" class="form-control" onkeypress="return hanyaAngka(event)"
+                        <label for="exampleInputEmail1">Penjualan Bersih</label>
+                        <input type="text" name="penjualan" class="form-control" onkeypress="return hanyaAngka(event)"
                             required>
                     </div>
 

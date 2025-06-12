@@ -20,7 +20,8 @@
                             <th>Kode</th>
                             <th>Nama overhead</th>
                             <th>Jenis Overhead</th>
-                            <th>Jumlah</th>
+                            <th>Biaya Overhead Variable</th>
+                            <th>Biaya Overhead Tetap</th>
                             <th>Keterangan</th>
                             <th>Aksi</th>
                         </tr>
@@ -32,7 +33,8 @@
                             <td>{{$item->kode}}</td>
                             <td>{{$item->nama}}</td>
                             <td>{{$item->jenis}}</td>
-                            <td>{{number_format($item->jumlah)}}</td>
+                            <td>{{number_format($item->overhead_variabel)}}</td>
+                            <td>{{number_format($item->overhead_tetap)}}</td>
                             <td>{{$item->keterangan}}</td>
                             <td class="text-right">
 

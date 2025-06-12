@@ -112,7 +112,7 @@
                                 class="nav-link {{request()->is('superadmin/biaya*') ? 'active2':''}}">
                                 <i class="nav-icon fas fa-arrow-right"></i>
                                 <p>
-                                    Data Biaya Produksi
+                                    Data Biaya Produksi / FC
                                 </p>
                             </a>
                         </li>
