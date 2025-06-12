@@ -37,14 +37,22 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">debit</label>
-                        <input type="text" name="debit" value="{{$data->debit}}" class="form-control"
-                            onkeypress="return hanyaAngka(event)" required>
+                        <select class="form-control" name="debit">
+                            <option value="bertambah" {{$data->debit == 'bertambah' ? 'selected':''}}>Bertambah</option>
+                            <option value="berkurang" {{$data->debit == 'berkurang' ? 'selected':''}}>Berkurang</option>
+                        </select>
+
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">kredit</label>
-                        <input type="text" name="kredit" value="{{$data->kredit}}" class="form-control"
-                            onkeypress="return hanyaAngka(event)" required>
+                        <select class="form-control" name="kredit">
+                            <option value="bertambah" {{$data->kredit == 'bertambah' ? 'selected':''}}>Bertambah
+                            </option>
+                            <option value="berkurang" {{$data->kredit == 'berkurang' ? 'selected':''}}>Berkurang
+                            </option>
+                        </select>
+
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">keterangan</label>

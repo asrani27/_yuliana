@@ -38,14 +38,19 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">debit</label>
-                        <input type="text" name="debit" class="form-control" onkeypress="return hanyaAngka(event)"
-                            required>
+
+                        <select class="form-control" name="debit">
+                            <option value="bertambah">Bertambah</option>
+                            <option value="berkurang">Berkurang</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">kredit</label>
-                        <input type="text" name="kredit" class="form-control" onkeypress="return hanyaAngka(event)"
-                            required>
+                        <select class="form-control" name="kredit">
+                            <option value="bertambah">Bertambah</option>
+                            <option value="berkurang">Berkurang</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">keterangan</label>
