@@ -83,7 +83,24 @@ function kodeJurnal()
         return 'JU0' . Jurnal::get()->count();
     }
 }
-
+function kodeBahan()
+{
+    $kode =  Bahan::get()->count();
+    if ($kode == 0) {
+        return 'BH01';
+    } else {
+        return 'BH0' . Bahan::get()->count();
+    }
+}
+function kodeOverhead()
+{
+    $kode =  Overhead::get()->count();
+    if ($kode == 0) {
+        return 'OV01';
+    } else {
+        return 'OV0' . Overhead::get()->count();
+    }
+}
 function kodeBiaya()
 {
     $kode =  Biaya::get()->count();

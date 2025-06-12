@@ -17,6 +17,7 @@
                     <thead class="bg-success">
                         <tr>
                             <th>No</th>
+                            <th>Kode</th>
                             <th>Nama overhead</th>
                             <th>Jenis Overhead</th>
                             <th>Jumlah</th>
@@ -28,6 +29,7 @@
                         @foreach ($data as $key => $item)
                         <tr style="font-size:14px">
                             <td>{{$key + 1}}</td>
+                            <td>{{$item->kode}}</td>
                             <td>{{$item->nama}}</td>
                             <td>{{$item->jenis}}</td>
                             <td>{{number_format($item->jumlah)}}</td>
