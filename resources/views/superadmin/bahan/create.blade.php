@@ -12,6 +12,10 @@
                 @csrf
                 <div class="card-body">
                     <div class="form-group">
+                        <label for="exampleInputEmail1">Kode bahan</label>
+                        <input type="text" name="kode" class="form-control" value="{{kodeBahan()}}">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Nama bahan</label>
                         <input type="text" name="nama" class="form-control" required>
                     </div>

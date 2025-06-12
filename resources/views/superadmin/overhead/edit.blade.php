@@ -20,11 +20,15 @@
                         <input type="text" name="jenis" class="form-control" value="{{$data->jenis}}" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">jumlah</label>
-                        <input type="text" name="jumlah" class="form-control" value="{{$data->jumlah}}"
+                        <label for="exampleInputEmail1">Biaya Overhead Pabrik variabel</label>
+                        <input type="text" name="overhead_variabel" class="form-control"
+                            value="{{$data->overhead_variabel}}" onkeypress="return hanyaAngka(event)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Biaya Overhead Pabrik tetap</label>
+                        <input type="text" name="overhead_tetap" class="form-control" value="{{$data->overhead_tetap}}"
                             onkeypress="return hanyaAngka(event)" required>
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1">keterangan</label>
                         <input type="text" name="keterangan" class="form-control" value="{{$data->keterangan}}"

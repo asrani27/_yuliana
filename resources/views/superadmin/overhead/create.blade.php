@@ -12,6 +12,10 @@
                 @csrf
                 <div class="card-body">
                     <div class="form-group">
+                        <label for="exampleInputEmail1">Kode Overhead</label>
+                        <input type="text" name="kode" class="form-control" value="{{kodeOverhead()}}">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Nama overhead</label>
                         <input type="text" name="nama" class="form-control" required>
                     </div>
@@ -20,10 +24,16 @@
                         <input type="text" name="jenis" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">jumlah</label>
-                        <input type="text" name="jumlah" class="form-control" onkeypress="return hanyaAngka(event)"
-                            required>
+                        <label for="exampleInputEmail1">Biaya Overhead Pabrik variabel</label>
+                        <input type="text" name="overhead_variabel" class="form-control"
+                            onkeypress="return hanyaAngka(event)" required>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Biaya Overhead Pabrik tetap</label>
+                        <input type="text" name="overhead_tetap" class="form-control"
+                            onkeypress="return hanyaAngka(event)" required>
+                    </div>
+
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">keterangan</label>
