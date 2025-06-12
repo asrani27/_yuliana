@@ -36,8 +36,8 @@
                             <td>{{$item->kode}}</td>
                             <td>{{$item->nama}}</td>
                             <td>{{number_format($item->nominal)}}</td>
-                            <td>{{number_format($item->debit)}}</td>
-                            <td>{{number_format($item->kredit)}}</td>
+                            <td>{{$item->debit}}</td>
+                            <td>{{$item->kredit}}</td>
                             <td>{{$item->biaya == null ? '': $item->biaya->kode}}</td>
                             <td>{{$item->overhead == null ? '': $item->overhead->nama}}</td>
                             <td class="text-right">
