@@ -53,7 +53,7 @@
                 </table>
             </div>
             <!-- /.card-body -->
-        </div>
+        </div> {{$data->links()}}
     </div>
 </div>
 
